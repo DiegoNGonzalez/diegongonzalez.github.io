@@ -253,7 +253,7 @@ header{
 
 .contacto{
     padding: 2rem;
-    height: 100vh !important;
+    height: 90vh;
     width: 70%;
 }
 .contacto h2{
@@ -341,4 +341,55 @@ footer p{
     font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .navbar{
+        width: 100%;
+    }
+    .hero{
+        width: 100%;
+    }
+    .hero img{
+        width: 30%;
+    }
+    .social-icons{
+        width: 100%;
+    }
+    .sobre-mi{
+        width: 100%;
+    }
+    .proyectos{
+        width: 100%;
+    }
+    .proyecto-container{
+        width: 100%;
+    }
+    .proyecto{
+        width: 100%;
+    }
+    .skills{
+        width: 100%;
+        height: auto;
+    }
+    .skills-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .skill{
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+    }
+    .contacto-container{
+        width: 100%;
+    }
+    .contacto-form{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
 }
