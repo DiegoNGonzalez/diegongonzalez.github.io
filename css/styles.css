@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 body{
@@ -11,6 +12,11 @@ body{
      font-style: normal;
      background-image: linear-gradient(to bottom, #051123, #002157, #002d8d, #2e2ec0, #7912eb);
 }
+header{
+    top: 0;
+    position: sticky;
+    
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -18,9 +24,9 @@ body{
     padding: 1rem 2rem;
     background-color: rgba(33, 33, 33, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #999;
-    width: 50%;
+    width: 30%;
     border-radius: 20px;
+    
 }
 .menu{
     display: flex;
@@ -28,7 +34,7 @@ body{
 }
 .menu a{
     text-decoration: none;
-    color: #b6b5b5;
+    color: #d8d8d8;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -83,8 +89,8 @@ body{
     box-shadow: #7912eb 0px 0px 4px;
 }
 .social-icons a img{
-    width: 100%;
-    height: 100%;
+    height: 30px;
+    width: 30px;
     border-radius: 0%;
 }
 .social-icons a img:hover{
@@ -120,22 +126,24 @@ body{
 }
 .proyectos{
     padding: 2rem;
-    height: 100vh;
-    width: 70%;
+    width: 100%;
 }
 .proyectos h2{
     font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 .proyecto-container{
     display: flex;
-    flex-direction: column;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 70%;
+    flex-wrap: wrap;
+    
+    
 }
 .proyecto{
     display: flex;
@@ -147,6 +155,8 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     width: 50%;
+    margin-bottom: 2rem;
+    
 }
 .proyecto-texto{
     display: flex;
@@ -161,7 +171,7 @@ body{
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 .proyecto-texto p{
     font-size: 1.2rem;
@@ -170,34 +180,150 @@ body{
     padding-bottom: 1rem;
 }
 .proyecto .btn{
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
     padding: 0.5rem ;
-    background-color: #7912eb;
+    background-color:  #f7d460;
     border-radius: 20px;
 }
 .proyecto .btn:hover{
-    background-color: #f7d460;
+    background-color:#af77f0 ;
     color: #000;
 }
 .proyecto .btn img{
     width: 100%;
-    height: 100%;
-
+    height: 30px;
+    
 }
 .proyecto-img{
     width: 100%;
     border-radius: 20px;
+    padding: 1rem;
 }
 .proyecto img{
     width: 100%;
     border-radius: 10%;
 }
 
+.skills{
+    padding: 3rem 2rem;
+    width: 100%;
+    height: 100vh;
+    
+}
+.skills h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.skills-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(33, 33, 33, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 5rem;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+.skill p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 1rem;
+}
+.skill img{
+    height: 60px;
+    border-radius: 25%;
+    background-color: #fff;
+    padding: 0.5rem;
 
+}
 
+.contacto{
+    padding: 2rem;
+    height: 100vh !important;
+    width: 70%;
+}
+.contacto h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contacto-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contacto-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+
+}
+.contacto-texto p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(73, 5, 87, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 50%;
+    height: 40vh;
+    margin-bottom: 2rem;
+}
+.contacto-form input{
+    padding: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.contacto-form textarea{
+    padding: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.contacto-form button{
+    padding: 1rem;
+    background-color:  #f7d460;
+    border-radius: 20px;
+    width: 100%;
+    color: #333;
+}
+.contacto-form button:hover{
+    background-color:#af77f0 ;
+    color: #000;
+}
 
 
 
